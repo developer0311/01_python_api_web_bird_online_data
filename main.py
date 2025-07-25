@@ -68,7 +68,7 @@ def get_service_data():
 
     return jsonify(
         {
-            "grouped_data": grouped_data,
+            "grouped_data":  list(grouped_data.items()),
             "option_price_map": option_price_map,
             "keyword_price_map": keyword_price_map,
             "option_keyword_map": option_keyword_map,
